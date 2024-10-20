@@ -7,26 +7,26 @@
    <meta name="author" content="NextGenerationDev">
    <title>Nexa Corporation</title>
    <!--Favicon img-->
-   <link rel="shortcut icon" href="assets/img/favicon/favicon.png">
+   <link rel="shortcut icon" href="static/img/favicon/favicon.png">
    <!--Bootstarp min css-->
-   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="static/css/bootstrap.min.css">
    <!--Bootstarp map css-->
-   <link rel="stylesheet" href="assets/css/bootstrap.css.map">
+   <link rel="stylesheet" href="static/css/bootstrap.css.map">
    <!--Odometer css-->
-   <link rel="stylesheet" href="assets/css/odometer.css">
+   <link rel="stylesheet" href="static/css/odometer.css">
    <!--Owl Carousel css-->
-   <link rel="stylesheet" href="assets/css/owl.min.css">
+   <link rel="stylesheet" href="static/css/owl.min.css">
    <!--Owl Carousel Theme css-->
-   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+   <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
    <!--All min css-->
-   <link rel="stylesheet" href="assets/css/all.min.css">
+   <link rel="stylesheet" href="static/css/all.min.css">
    <!--Animate css-->
-   <link rel="stylesheet" href="assets/css/animate.css">
+   <link rel="stylesheet" href="static/css/animate.css">
    <!--Owl Nice select css-->
-   <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+   <link rel="stylesheet" href="static/css/nice-select.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
    <!--main css-->
-   <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet" href="static/css/main.css">
 </head>
 
 <body>
@@ -53,7 +53,7 @@
          <div class="header-wrapper">
             <div class="logo-menu">
                <a href="index.html" class="logo">
-                  <span class="home__theme">NexaCorp</span> <!--<img src="assets/img/logo/logo2.png" alt="img">-->
+                  <span class="home__theme">NexaCorp</span> <!--<img src="static/img/logo/logo2.png" alt="img">-->
                </a>
             </div>
             <div class="header-bar d-lg-none">
@@ -72,27 +72,27 @@
                         </a>
                      </li>-->
                      <li class="subtwohober">
-                        <a href="index.html">
+                        <a href="{{url_for('index')}}">
                            <span><i class="fa-solid fa-house"></i></span>
                            <span>Page d'accueil</span>
                         </a>
                      </li>
                      <li class="subtwohober">
-                        <a href="services.html">
+                        <a href="{{url_for('services')}}">
                            <span class="icon"><i class="fa-solid fa-cloud"></i></span>
                            <span>Nos Services</span>
                         </a>
                      </li>
-                     <!--<li class="subtwohober">
-                        <a href="sharp-home.html">
-                           <span><i class="fa-solid fa-house"></i></span>
-                           <span>Home Three</span>
+                     <li class="subtwohober">
+                        <a href="{{url_for('blog')}}">
+                           <span><i class="fa-solid fa-sitemap"></i></span>
+                           <span>Blog</span>
                         </a>
-                     </li>-->
+                     </li>
                   </ul>
                </li>
                <li>
-                  <a href="about.html">A propos de nous</a>
+                  <a href="{{url_for('about')}}">A propos de nous</a>
                </li>
                <!--<li>
                   <a href="pricing.html">Politique de prix</a>
@@ -139,7 +139,7 @@
                   </a>
                </li>
             </ul>-->
-            <a href="contact.html" class="cmn--btn">
+            <a href="{{url_for('contact')}}" class="cmn--btn">
                <span>Nous contacter</span>
             </a>
          </div>
@@ -172,13 +172,13 @@
             </div>
             <div class="col-xl-6 col-lg-6">
                <div class="home__thumb">
-                  <img src="assets/img/home/heros.png" alt="home">
+                  <img src="static/img/home/heros.png" alt="home">
                </div>
             </div>
          </div>
       </div>
       <div class="h__bottom">
-         <img src="assets/img/home/h-bottom.png" alt="h-img">
+         <img src="static/img/home/h-bottom.png" alt="h-img">
       </div>
    </div>
 </section>
@@ -192,7 +192,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/departement-informatique.png" alt="f">
+                     <img src="static/img/home/feature/departement-informatique.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -204,7 +204,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/intelligence-artificielle.png" alt="f">
+                     <img src="static/img/home/feature/intelligence-artificielle.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -216,7 +216,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/reportage.png" alt="f">
+                     <img src="static/img/home/feature/reportage.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -228,7 +228,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/empreinte-digitale.png" alt="f">
+                     <img src="static/img/home/feature/empreinte-digitale.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -240,7 +240,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/entretien.png" alt="f">
+                     <img src="static/img/home/feature/entretien.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -252,7 +252,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/serveur-cloud.png" alt="f">
+                     <img src="static/img/home/feature/serveur-cloud.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -264,7 +264,7 @@
             <!--<div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/impression.png" alt="f">
+                     <img src="static/img/home/feature/impression.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -276,7 +276,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/redaction-de-contenu.png" alt="f">
+                     <img src="static/img/home/feature/redaction-de-contenu.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -288,7 +288,7 @@
             <div class="col-xxl-2 col-xl-3 col-lg-4 col-md-4 col-sm-6">
                <div class="home__feature__items">
                   <div class="thumb">
-                     <img src="assets/img/home/feature/circl.png" alt="f">
+                     <img src="static/img/home/feature/circl.png" alt="f">
                   </div>
                   <h6>
                      <a href="#0">
@@ -301,7 +301,7 @@
       </div>
    </div>
    <div class="h__bottom d-none">
-      <img src="assets/img/home/h-bottom2.png" alt="h-img">
+      <img src="static/img/home/h-bottom2.png" alt="h-img">
    </div>
 </section>
 <!--Feature End-->
@@ -325,19 +325,19 @@
                </form>
                <ul class="dot__com">
                   <li>
-                     <span><img src="assets/img/hosting/com.png" alt="c-img"></span>
+                     <span><img src="static/img/hosting/com.png" alt="c-img"></span>
                      <span>$425</span>
                   </li>
                   <li>
-                     <span><img src="assets/img/hosting/net.png" alt="c-img"></span>
+                     <span><img src="static/img/hosting/net.png" alt="c-img"></span>
                      <span>$187</span>
                   </li>
                   <li>
-                     <span><img src="assets/img/hosting/info.png" alt="c-img"></span>
+                     <span><img src="static/img/hosting/info.png" alt="c-img"></span>
                      <span>$98</span>
                   </li>
                   <li>
-                     <span><img src="assets/img/hosting/org.png" alt="c-img"></span>
+                     <span><img src="static/img/hosting/org.png" alt="c-img"></span>
                      <span>$55</span>
                   </li>
                </ul>
@@ -346,7 +346,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom.png" alt="h-img">
+      <img src="static/img/home/h-bottom.png" alt="h-img">
    </div>
 </section>-->
 <!--Domain Hosting End-->
@@ -363,7 +363,7 @@
          <div class="col-xl-6 col-lg-6 col-md-6">
             <div class="home__price__items active__bg">
                <div class="thumb">
-                  <img src="assets/img/home/pricing/plan1.png" alt="img">
+                  <img src="static/img/home/pricing/plan1.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -383,7 +383,7 @@
          <!--<div class="col-xl-6 col-lg-6 col-md-6">
             <div class="home__price__items">
                <div class="thumb">
-                  <img src="assets/img/home/pricing/plan2.png" alt="img">
+                  <img src="static/img/home/pricing/plan2.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -403,7 +403,7 @@
          <!--<div class="col-xl-6 col-lg-6 col-md-6">
             <div class="home__price__items">
                <div class="thumb">
-                  <img src="assets/img/home/pricing/plan3.png" alt="img">
+                  <img src="static/img/home/pricing/plan3.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -423,7 +423,7 @@
          <!--<div class="col-xl-6 col-lg-6 col-md-6">
             <div class="home__price__items">
                <div class="thumb">
-                  <img src="assets/img/home/pricing/plan4.png" alt="img">
+                  <img src="static/img/home/pricing/plan4.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -443,7 +443,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom2.png" alt="h-img">
+      <img src="static/img/home/h-bottom2.png" alt="h-img">
    </div>
 </section>
 <!--Home Pricing End-->
@@ -460,7 +460,7 @@
          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items right__align">
                <div class="thumb">
-                  <img src="assets/img/home/product/reseller.png" alt="img">
+                  <img src="static/img/home/product/reseller.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -480,7 +480,7 @@
          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items">
                <div class="thumb">
-                  <img src="assets/img/home/product/vps.png" alt="img">
+                  <img src="static/img/home/product/vps.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -500,7 +500,7 @@
          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items right__align">
                <div class="thumb">
-                  <img src="assets/img/home/product/wp.png" alt="img">
+                  <img src="static/img/home/product/wp.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -521,7 +521,7 @@
          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items active__bg">
                <div class="thumb">
-                  <img src="assets/img/home/product/ssl.png" alt="img">
+                  <img src="static/img/home/product/ssl.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -543,7 +543,7 @@
          <!--<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items active__bg">
                <div class="thumb">
-                  <img src="assets/img/home/product/atos.png" alt="img">
+                  <img src="static/img/home/product/atos.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -565,7 +565,7 @@
          <!--<div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items active__bg">
                <div class="thumb">
-                  <img src="assets/img/home/product/dedicated.png" alt="img">
+                  <img src="static/img/home/product/dedicated.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -585,7 +585,7 @@
          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items active__bg">
                <div class="thumb">
-                  <img src="assets/img/home/product/email.png" alt="img">
+                  <img src="static/img/home/product/email.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -605,7 +605,7 @@
          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-6">
             <div class="home__product__items active__bg">
                <div class="thumb">
-                  <img src="assets/img/home/product/web.png" alt="img">
+                  <img src="static/img/home/product/web.png" alt="img">
                </div>
                <div class="content">
                   <h5>
@@ -625,7 +625,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom.png" alt="h-img">
+      <img src="static/img/home/h-bottom.png" alt="h-img">
    </div>
 </section>
 <!--Home Product End-->
@@ -647,7 +647,7 @@
                Une description en bref de chacun    
             </p>-->
             <div class="client">
-               <img src="assets/img/testimonial/c6.png" alt="img">
+               <img src="static/img/testimonial/c6.png" alt="img">
             </div>
             <h6>Mamane Dari Sidikou </h6>
             <span class="designation">
@@ -659,7 +659,7 @@
                Une description en bref de chacun
             </p>-->
             <div class="client">
-               <img src="assets/img/testimonial/c5.png" alt="img">
+               <img src="static/img/testimonial/c5.png" alt="img">
             </div>
             <h6>Wusi Hamadou  Ali  </h6>
             <span class="designation">
@@ -671,7 +671,7 @@
                Une description en bref de chacun
             </p>-->
             <div class="client">
-               <img src="assets/img/testimonial/c4.png" alt="img">
+               <img src="static/img/testimonial/c4.png" alt="img">
             </div>
             <h6>     Moussa Hammadou Habsatou    </h6>
             <span class="designation">
@@ -683,7 +683,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c3.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c3.jpg" alt="img">-->
             </div>
             <h6>Abdou Garba Hamissou</h6>
             <span class="designation">
@@ -695,7 +695,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Bohari abba Omar </h6>
             <span class="designation">
@@ -707,7 +707,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Abdoul Razak ADA </h6>
             <span class="designation">
@@ -719,7 +719,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Almoustapha Djibrilla </h6>
             <span class="designation">
@@ -731,7 +731,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Issaka Moussa Sidikou </h6>
             <span class="designation">
@@ -743,7 +743,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Dogon Yaro Kadidjatou </h6>
             <span class="designation">
@@ -755,7 +755,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Sabiou Issoufou </h6>
             <span class="designation">
@@ -767,7 +767,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Mahamadou Adnane </h6>
             <span class="designation">
@@ -779,7 +779,7 @@
                Description du cursus de chacun
             </p>-->
             <div class="client">
-               <!--<img src="assets/img/testimonial/c2.jpg" alt="img">-->
+               <!--<img src="static/img/testimonial/c2.jpg" alt="img">-->
             </div>
             <h6>Atto Djibrim </h6>
             <span class="designation">
@@ -791,7 +791,7 @@
                Description du cursus de chacun
             </p>
             <div class="client">
-               <img src="assets/img/testimonial/c1.jpg" alt="img">
+               <img src="static/img/testimonial/c1.jpg" alt="img">
             </div>
             <h6>Ajleo Leno</h6>
             <span class="designation">
@@ -801,7 +801,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom2.png" alt="h-img">
+      <img src="static/img/home/h-bottom2.png" alt="h-img">
    </div>
 </section>
 <!--Feature Section End-->
@@ -831,7 +831,7 @@
                         Consectetur adipisicing elit.
                      </p>
                      <div class="user">
-                        <img src="assets/img/server/user.png" alt="srver-img">
+                        <img src="static/img/server/user.png" alt="srver-img">
                      </div>
                      <a href="#0" class="cmn--btn border__trans">
                         <span>2-545-548-3654</span>
@@ -849,17 +849,17 @@
                       <ul class="domain__com">
                         <li>
                            <a href="#0">
-                              <img src="assets/img/hosting/com.png" alt="img">
+                              <img src="static/img/hosting/com.png" alt="img">
                            </a>
                         </li>
                         <li>
                            <a href="#0">
-                              <img src="assets/img/hosting/net.png" alt="img">
+                              <img src="static/img/hosting/net.png" alt="img">
                            </a>
                         </li>
                         <li>
                            <a href="#0">
-                              <img src="assets/img/hosting/org.png" alt="img">
+                              <img src="static/img/hosting/org.png" alt="img">
                            </a>
                         </li>
                       </ul>
@@ -873,7 +873,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom.png" alt="h-img">
+      <img src="static/img/home/h-bottom.png" alt="h-img">
    </div>
 </section>-->
 <!--Feature Section End-->
@@ -891,7 +891,6 @@
                         Nous sommes là pour vous aider à atteindre vos objectifs.
                      </p>
                   </h4>
-                  
                   <a href="#" class="online__btn">
                      <span>Commencer</span>
                   </a>
@@ -901,7 +900,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom2.png" alt="h-img">
+      <img src="static/img/home/h-bottom2.png" alt="h-img">
    </div>
 </section>
 <!--Online Section End-->
@@ -924,7 +923,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom.png" alt="h-img">
+      <img src="static/img/home/h-bottom.png" alt="h-img">
    </div>
 </section>-->
 <!--Complate Section End-->
@@ -1089,18 +1088,18 @@
                      <ul class="contact">
                         <li>
                            <div class="phone-icon">
-                              <img src="assets/img/footer/email.png" alt="email">
+                              <img src="static/img/footer/email.png" alt="email">
                            </div>
-                           <a href="#0" class="email-part">
+                           <a href="{{url_for('contact')}}" class="email-part">
                               <span>Email:</span>
                               support@example.com
                            </a>
                         </li>
                         <li>
                            <div class="phone-icon">
-                              <img src="assets/img/footer/phone.png" alt="phone">
+                              <img src="static/img/footer/phone.png" alt="phone">
                            </div>
-                           <a href="#0" class="email-part">
+                           <a href="{{url_for('contact')}}" class="email-part">
                               <span>Phone:</span>
                               +227......
                            </a>
@@ -1130,7 +1129,7 @@
       </div>
    </div>
    <div class="h__bottom">
-      <img src="assets/img/home/h-bottom2.png" alt="h-img">
+      <img src="static/img/home/h-bottom2.png" alt="h-img">
    </div>
 </footer>
 <!--Footer End-->
@@ -1157,7 +1156,7 @@
                         <div class="tab-pane fade" id="homeemail" role="tabpanel">
                            <div class="form__tabs__wrap">
                                  <div class="focus__icon">
-                                    <img src="assets/img/modal/flowers.png" alt="f-img">
+                                    <img src="static/img/modal/flowers.png" alt="f-img">
                                  </div>
                                  <form action="#0">
                                     <div class="form__grp">
@@ -1224,7 +1223,7 @@
                         <div class="tab-pane fade show active" id="contactup" role="tabpanel">
                            <div class="form__tabs__wrap">
                                  <div class="focus__icon">
-                                    <img src="assets/img/modal/flowers.png" alt="f-img">
+                                    <img src="static/img/modal/flowers.png" alt="f-img">
                                  </div>
                                  <form action="#0">
                                     <div class="form__grp">
@@ -1314,7 +1313,7 @@
                         <div class="tab-pane fade show active" id="home2" role="tabpanel">
                            <div class="form__tabs__wrap">
                                  <div class="focus__icon">
-                                    <img src="assets/img/modal/flowers.png" alt="f-img">
+                                    <img src="static/img/modal/flowers.png" alt="f-img">
                                  </div>
                                  <form action="#0">
                                     <div class="form__grp">
@@ -1381,7 +1380,7 @@
                         <div class="tab-pane fade" id="contact2" role="tabpanel">
                            <div class="form__tabs__wrap">
                                  <div class="focus__icon">
-                                    <img src="assets/img/modal/flowers.png" alt="f-img">
+                                    <img src="static/img/modal/flowers.png" alt="f-img">
                                  </div>
                                  <form action="#0">
                                     <div class="form__grp">
@@ -1452,24 +1451,24 @@
 
 
    <!--Jquery 3 6 0 Min Js-->
-   <script src="assets/js/jquery-3.6.0.min.js"></script>
+   <script src="static/js/jquery-3.6.0.min.js"></script>
    <!--Bootstrap bundle Js-->
-   <script src="assets/js/bootstrap.bundle.js"></script>
+   <script src="static/js/bootstrap.bundle.js"></script>
    <!--Waypoint Jquery min Js-->
-   <script src="assets/js/jquery.waypoints.min.js"></script>
+   <script src="static/js/jquery.waypoints.min.js"></script>
    <!--Viewport Jquery Js-->
-   <script src="assets/js/viewport.jquery.js"></script>
+   <script src="static/js/viewport.jquery.js"></script>
    <!--Wow min Js-->
-   <script src="assets/js/wow.min.js"></script>
+   <script src="static/js/wow.min.js"></script>
    <!--Odometer Up min Js-->
-   <script src="assets/js/odometer.min.js"></script>
+   <script src="static/js/odometer.min.js"></script>
    <!--Owl Carousel min Js-->
-   <script src="assets/js/owl.min.js"></script>
+   <script src="static/js/owl.min.js"></script>
    <!--Owl nice Jquery min Js-->
-   <script src="assets/js/jquery.nice-select.min.js"></script> 
-   <script src="assets/js/magnific-popup.js"></script> 
+   <script src="static/js/jquery.nice-select.min.js"></script> 
+   <script src="static/js/magnific-popup.js"></script> 
    <!--main Js-->
-   <script src="assets/js/main.js"></script>
+   <script src="static/js/main.js"></script>
 
 </body>
 

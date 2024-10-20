@@ -758,7 +758,7 @@ p {
 }
 
 .banner__items {
-  background: url(../../assets/img/banner/banner5.png) no-repeat center center;
+  background: url(../../static/img/banner/banner5.png) no-repeat center center;
   background-size: cover;
   padding: 250px 0 200px;
   position: relative;
@@ -771,12 +771,12 @@ p {
 }
 
 .thumb__itemsone {
-  background: url(../../assets/img/banner/banner2.png) no-repeat center center;
+  background: url(../../static/img/banner/banner2.png) no-repeat center center;
   background-size: cover;
 }
 
 .thumb__itemstwo {
-  background: url(../../assets/img/banner/banner1.png) no-repeat center center;
+  background: url(../../static/img/banner/banner1.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -944,7 +944,7 @@ p {
 }
 
 .breadcumnd__banner {
-  background: url(../../assets/img/banner/bread.png) no-repeat center center;
+  background: url(../../static/img/banner/bread.png) no-repeat center center;
   background-size: cover;
   position: relative;
   padding: 130px 0 70px;
@@ -1699,7 +1699,7 @@ p {
 }
 
 .choose__section {
-  background: url(../../assets/img/choose/choose-bg.png) no-repeat center center;
+  background: url(../../static/img/choose/choose-bg.png) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -2079,7 +2079,7 @@ p {
 }
 
 .users__section {
-  background: url(../../assets/img/testimonial/user1.png) no-repeat center center;
+  background: url(../../static/img/testimonial/user1.png) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -2360,7 +2360,7 @@ p {
 }
 
 .faq__section {
-  background: url(../../assets/img/faq/faq2.jpg) no-repeat center center;
+  background: url(../../static/img/faq/faq2.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -2626,7 +2626,7 @@ p {
 }
 
 .complate__section {
-  background: url(../../assets/img/complate/com-bg.jpg) no-repeat center center;
+  background: url(../../static/img/complate/com-bg.jpg) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -2687,7 +2687,7 @@ p {
 }
 .register__modal .modal-content .modal-header button {
   background-image: none;
-  background: url(../../assets/img/modal/cros.png) no-repeat;
+  background: url(../../static/img/modal/cros.png) no-repeat;
   background-size: 20px;
   width: 10px;
   height: 10px;
