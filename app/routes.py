@@ -34,6 +34,7 @@ def blog():
 @app.route('/services')
 def services():
     return render_template('services.html')
+
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
@@ -54,7 +55,7 @@ def contact():
             msg = Message(
                 subject=f"[Contact Form] {form.subject.data}",
                 sender=form.email.data,
-                recipients=['sidikoudari@gmail.com']  # Utiliser l'adresse mail souhaitée
+                recipients=['sidikoudari@gmail.com']  # L'adresse mail où envoyer les messages
             )
             msg.body = (
                 f"Nom: {form.name.data}\n"
@@ -64,61 +65,13 @@ def contact():
                 f"Message: {form.message.data}"
             )
             mail.send(msg)
-            #flash('Votre message a été envoyé avec succès!', 'success')
+
+            # Affiche un message flash pour confirmer l'envoi du message
+            flash('Votre message a été envoyé avec succès!', 'success')
+        
         except Exception as e:
-            #flash('Une erreur est survenue lors de l\'envoi de votre message. Veuillez réessayer.', 'danger')
-            print(f"Erreur lors de l'envoi de l'email : {e}")
-
-        # Redirection après envoi du formulaire
-        return redirect(url_for('services'))  
-
+            # Gestion des erreurs d'envoi de l'email
+            flash(f'Une erreur est survenue lors de l\'envoi de votre message : {e}', 'danger')
+    
+    # Toujours rendre la page contact avec le formulaire, avec les messages flash
     return render_template('contact.html', form=form)
-
-
-
-# Create a GenerativeModel instance
-model = genai.GenerativeModel(model_name="gemini-1.5-flash")
-
-# Initialize SQLite database
-conn = sqlite3.connect('app.db')
-c = conn.cursor()
-
-# Create a table for storing conversations if it doesn't exist
-c.execute('''CREATE TABLE IF NOT EXISTS conversations 
-             (id INTEGER PRIMARY KEY AUTOINCREMENT, user_message TEXT, bot_response TEXT)''')
-conn.commit()
-
-def save_conversation(user_message, bot_response):
-    c.execute('INSERT INTO conversations (user_message, bot_response) VALUES (?, ?)', 
-              (user_message, bot_response))
-    conn.commit()
-
-def get_response(user_message):
-    # Context for NexaCorp assistant
-    context = (
-        "You are an AI assistant working at Nexa Corporation (nexaCorp), a startup specializing in "
-        "data, digital transformation, and technological innovation. NexaCorp offers a full range "
-        "of services to help organizations thrive in the digital world. You only respond to questions "
-        "related to IT and Nexa. Please answer accordingly."
-        "Conversation will be in frech"
-    )
-    
-    # Add the context to the user's message
-    prompt = f"{context}\n\nUser: {user_message}\nAssistant:"
-    
-    # Generate response using Gemini model
-    response = model.generate_content(prompt)
-    
-    # Save conversation in SQLite
-    save_conversation(user_message, response.text)
-    
-    return response.text
-
-if __name__ == '__main__':
-    # Simple interaction loop for testing
-    while True:
-        user_message = input("You: ")
-        if user_message.lower() in ['exit', 'quit']:
-            break
-        bot_response = get_response(user_message)
-        print(f"Bot: {bot_response}")
